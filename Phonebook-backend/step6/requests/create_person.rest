@@ -1,0 +1,25 @@
+### valid
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Linus Torvalds",
+  "number": "555-1234"
+}
+
+### missing fields -> 400
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "No Number"
+}
+
+### duplicate name -> 400
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Arto Hellas",
+  "number": "000"
+}

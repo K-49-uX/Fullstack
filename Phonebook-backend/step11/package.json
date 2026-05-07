@@ -1,0 +1,19 @@
+{
+  "name": "phonebook-backend",
+  "version": "1.0.0",
+  "description": "Exercise 3.11 - Full Stack Phonebook (frontend served by backend on Render)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "build:ui": "rm -rf dist && cd frontend && npm install && npm run build && cd .. && cp -r frontend/dist dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
+  }
+}

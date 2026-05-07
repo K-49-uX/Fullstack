@@ -1,14 +1,14 @@
 ### list all
-GET https://YOUR-APP-NAME.onrender.com/api/persons
+GET https://fullstack-h2cn.onrender.com/api/persons
 
 ### info
-GET https://YOUR-APP-NAME.onrender.com/info
+GET https://fullstack-h2cn.onrender.com/info
 
 ### single
-GET https://YOUR-APP-NAME.onrender.com/api/persons/1
+GET https://fullstack-h2cn.onrender.com/api/persons/1
 
 ### create
-POST https://YOUR-APP-NAME.onrender.com/api/persons
+POST https://fullstack-h2cn.onrender.com/api/persons
 Content-Type: application/json
 
 {
@@ -17,4 +17,4 @@ Content-Type: application/json
 }
 
 ### delete
-DELETE https://YOUR-APP-NAME.onrender.com/api/persons/1
+DELETE https://fullstack-h2cn.onrender.com/api/persons/1

@@ -6,8 +6,7 @@ to GitHub, but Render is configured to build/run **only this folder** via the
 
 ## Live URL
 
-> Replace this once the Render deploy is up:
-> **https://YOUR-APP-NAME.onrender.com**
+**https://fullstack-h2cn.onrender.com**
 
 Endpoints to test:
 

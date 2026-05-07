@@ -5,8 +5,11 @@ Express REST API on the same origin.
 
 ## Live URL
 
-> Replace this once Render finishes deploying:
-> **https://YOUR-APP-NAME.onrender.com**
+**https://fullstack-h2cn.onrender.com**
+
+- App: https://fullstack-h2cn.onrender.com
+- API list: https://fullstack-h2cn.onrender.com/api/persons
+- Info: https://fullstack-h2cn.onrender.com/info
 
 ## Layout
 

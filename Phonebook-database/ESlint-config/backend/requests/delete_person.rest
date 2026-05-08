@@ -1,0 +1,2 @@
+### Replace REPLACE_ID with a real id from /api/persons
+DELETE http://localhost:3001/api/persons/REPLACE_ID

@@ -1,0 +1,2 @@
+### Replace REPLACE_ID with a real id from /api/persons
+GET http://localhost:3001/api/persons/REPLACE_ID

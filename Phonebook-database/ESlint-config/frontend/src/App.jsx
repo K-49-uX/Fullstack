@@ -1,56 +1,9 @@
 import { useState, useEffect } from 'react';
 import personService from './services/persons';
-
-const Notification = ({ message, type }) => {
-  if (!message) return null;
-
-  const style = {
-    color: type === 'error' ? 'red' : 'green',
-    background: 'lightgrey',
-    fontSize: 20,
-    border: `2px solid ${type === 'error' ? 'red' : 'green'}`,
-    borderRadius: 5,
-    padding: 10,
-    marginBottom: 10
-  };
-
-  return <div style={style}>{message}</div>;
-};
-
-const Filter = ({ filter, onChange }) => (
-  <div>
-    filter shown with <input value={filter} onChange={onChange} />
-  </div>
-);
-
-const PersonForm = ({ onSubmit, newName, onNameChange, newNumber, onNumberChange }) => (
-  <form onSubmit={onSubmit}>
-    <div>
-      name: <input value={newName} onChange={onNameChange} />
-    </div>
-    <div>
-      number: <input value={newNumber} onChange={onNumberChange} />
-    </div>
-    <div>
-      <button type="submit">add</button>
-    </div>
-  </form>
-);
-
-const Person = ({ person, handleDelete }) => (
-  <p>
-    {person.name} {person.number}{' '}
-    <button onClick={() => handleDelete(person.id, person.name)}>delete</button>
-  </p>
-);
-
-const Persons = ({ persons, handleDelete }) => (
-  <div>
-    {persons.map(person => (
-      <Person key={person.id} person={person} handleDelete={handleDelete} />
-    ))}
-  </div>
-);
+import Notification from './components/Notification';
+import Filter from './components/Filter';
+import PersonForm from './components/PersonForm';
+import Persons from './components/Persons';
 
 const App = () => {
   const [persons, setPersons] = useState([]);

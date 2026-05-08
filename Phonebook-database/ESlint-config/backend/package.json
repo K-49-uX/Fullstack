@@ -7,9 +7,7 @@
     "start": "node index.js",
     "dev": "node --watch index.js",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "build:ui": "rm -rf dist && cd frontend && npm install && npm run build && cd .. && cp -r frontend/dist dist",
-    "render-build": "npm install && npm run build:ui"
+    "lint:fix": "eslint . --fix"
   },
   "author": "",
   "license": "MIT",

@@ -1,8 +1,6 @@
 const mongoose = require('mongoose')
 const dns = require('dns')
 
-// Force a public DNS resolver — some local/ISP DNS servers fail to resolve
-// MongoDB Atlas SRV records, causing ESERVFAIL.
 dns.setServers(['8.8.8.8', '1.1.1.1'])
 
 mongoose.set('strictQuery', false)

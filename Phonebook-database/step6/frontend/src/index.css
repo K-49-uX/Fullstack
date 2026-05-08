@@ -1,5 +1,4 @@
-/* Phonebook — polished styling
-   Targets bare elements so we don't have to edit App.jsx. */
+
 
 :root {
   --bg:        #f4f6fb;
@@ -55,7 +54,7 @@ h3 {
   letter-spacing: 0.06em;
 }
 
-/* Filter row + form fields */
+
 div > input[type="text"],
 form input {
   margin-left: 0.5rem;
@@ -78,7 +77,7 @@ form > div {
   margin-bottom: 0.6rem;
 }
 
-/* Buttons */
+
 button {
   cursor: pointer;
   padding: 0.45rem 0.95rem;
@@ -94,7 +93,7 @@ button {
 button:hover  { background: var(--primary-d); }
 button:active { transform: translateY(1px); }
 
-/* Inline "delete" buttons inside person rows */
+
 p button {
   margin-left: 0.5rem;
   padding: 0.25rem 0.7rem;
@@ -103,7 +102,7 @@ p button {
 }
 p button:hover { background: var(--danger-d); }
 
-/* Person rows */
+
 p {
   display: flex;
   justify-content: space-between;
@@ -116,7 +115,7 @@ p {
   font-size: 1rem;
 }
 
-/* Notification component already has inline styles, but smooth its rough edges */
+
 #root > div[style] {
   border-radius: var(--radius) !important;
   font-size: 1rem !important;

@@ -11,7 +11,7 @@ let persons = [
 ]
 
 const generateId = () => {
-  // big random range to make duplicate ids unlikely
+  
   return String(Math.floor(Math.random() * 1_000_000_000))
 }
 

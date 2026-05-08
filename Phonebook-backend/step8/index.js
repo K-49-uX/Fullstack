@@ -4,8 +4,8 @@ const app = express()
 
 app.use(express.json())
 
-// Custom token that prints the request body as JSON.
-// Empty string for requests without a body (GET, DELETE) so the log stays clean.
+
+
 morgan.token('body', (request) => {
   return request.body && Object.keys(request.body).length
     ? JSON.stringify(request.body)
@@ -13,7 +13,7 @@ morgan.token('body', (request) => {
 })
 
 // 'tiny' format = :method :url :status :res[content-length] - :response-time ms
-// We append :body so POST data is shown.
+
 app.use(
   morgan(':method :url :status :res[content-length] - :response-time ms :body')
 )

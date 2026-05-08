@@ -1,0 +1,20 @@
+{
+  "name": "phonebook-database-step1",
+  "version": "1.0.0",
+  "description": "Exercise 3.13 - Phonebook backend reading from MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "build:ui": "rm -rf dist && cd frontend && npm install && npm run build && cd .. && cp -r frontend/dist dist"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0"
+  }
+}

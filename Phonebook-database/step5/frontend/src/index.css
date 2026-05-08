@@ -1,0 +1,125 @@
+/* Phonebook — polished styling
+   Targets bare elements so we don't have to edit App.jsx. */
+
+:root {
+  --bg:        #f4f6fb;
+  --surface:   #ffffff;
+  --border:    #e2e6ee;
+  --text:      #1f2937;
+  --muted:     #6b7280;
+  --primary:   #2563eb;
+  --primary-d: #1d4ed8;
+  --danger:    #dc2626;
+  --danger-d:  #b91c1c;
+  --success:   #15803d;
+  --shadow:    0 4px 14px rgba(15, 23, 42, 0.06);
+  --radius:    10px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
+               'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 640px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+  letter-spacing: -0.01em;
+  color: #0f172a;
+}
+
+h3 {
+  margin: 1.75rem 0 0.75rem;
+  font-size: 1.1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Filter row + form fields */
+div > input[type="text"],
+form input {
+  margin-left: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+div > input[type="text"]:focus,
+form input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+form > div {
+  margin-bottom: 0.6rem;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  padding: 0.45rem 0.95rem;
+  font: inherit;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: var(--primary);
+  color: #fff;
+  transition: background 0.15s, transform 0.05s;
+}
+
+button:hover  { background: var(--primary-d); }
+button:active { transform: translateY(1px); }
+
+/* Inline "delete" buttons inside person rows */
+p button {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.85rem;
+  background: var(--danger);
+}
+p button:hover { background: var(--danger-d); }
+
+/* Person rows */
+p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.35rem 0;
+  padding: 0.6rem 0.85rem;
+  background: #f9fafb;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Notification component already has inline styles, but smooth its rough edges */
+#root > div[style] {
+  border-radius: var(--radius) !important;
+  font-size: 1rem !important;
+  padding: 0.85rem 1rem !important;
+  background: #ecfdf5 !important;
+}

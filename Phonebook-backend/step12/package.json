@@ -1,0 +1,14 @@
+{
+  "name": "step12",
+  "version": "1.0.0",
+  "description": "Task 3.12 — MongoDB Atlas CLI for the phonebook",
+  "main": "mongo.js",
+  "scripts": {
+    "list": "node mongo.js",
+    "add": "node mongo.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^8.23.1"
+  }
+}

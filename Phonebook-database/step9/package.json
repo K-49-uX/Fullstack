@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js",
-    "build:ui": "rm -rf dist && cd frontend && npm install && npm run build && cd .. && cp -r frontend/dist dist"
+    "build:ui": "rm -rf dist && cd frontend && npm install && npm run build && cd .. && cp -r frontend/dist dist",
+    "render-build": "npm install && npm run build:ui"
   },
   "author": "",
   "license": "MIT",
